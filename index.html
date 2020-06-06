@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Justin Ma's Website</title>
+<title>馬志康的网站</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -9,7 +9,8 @@
 <link rel="shortcut icon" href="https://img.icons8.com/ios-glyphs/30/000000/home.png"/>
 <script src="https://kit.fontawesome.com/66e071d816.js" crossorigin="anonymous"></script>
 <style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;
+						 text-align: center;}
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {width: 120px;background: #222;}
@@ -17,13 +18,21 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+/*
+header{
+	margin: auto;
+	text-align: center;
+	background-image: url("/jackson-pollock.jpg");
+}
+*/
 </style>
+	
 <body class="w3-black">
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-	<img src="./justinma_profile.jpg" style="width:100%">
-	<a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+	<img src="./justinma_profile.png" style="width:100%">
+	<a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
 	</a>
@@ -65,10 +74,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Page Content -->
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
-  <header class="w3-container w3-center w3-padding-32 w3-black" id="home">
+	<header class="w3-container w3-center w3-padding-32 w3-black" id="home">
     <h1 class="w3-jumbo w3-hide-small">Justin Ma</h1>
 	<h1 class="w3-xxxlarge w3-hide-medium w3-hide-large">Justin Ma</h1>
-    <p>M.Sc. Engineering Physics Student with a specialization in Machine Intelligence</p>
+    <p>MSc Engineering Physics Student</p>
 	 <p id="date">
 	  <script>
 		  n =  new Date();
@@ -84,16 +93,19 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 			  document.getElementById("date").innerHTML = d + "/" + m + "/" + y + " " 
 				  + h + ":" + min;}
 	  </script>
+		 LND
 	  </p>
+	</header>
 	  
   <!-- About Section -->
   <div class="w3-content w3-center w3-justify w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">About Me</h2>
     <hr style="width:1000px" class="w3-opacity w3-hide-small">
 	<hr style="width:300px" class="w3-opacity w3-hide-medium w3-hide-large">
-	
-    <p>Under construction.
-    </p>
+    <p>Hello there! My name is Justin Ma and I'm a engineering student with an interest in <a href="https://en.wikipedia.org/wiki/Machine_learning" class="w3-hover-text-green">machine learning</a>. I'm a curious person that likes to try things myself, this usually leads to me having too many unfinished side projects. A problem that I'm slowly working on. Unfortunately, there is not much to see here right now. I might put up some stuff in the future. In the meantime, listen to these songs: </p>
+	  <p>
+	<iframe src="https://open.spotify.com/embed/album/600ClrWRsAr7jZ0qjaBLHz" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+	  </p>
     </div>
   <!-- End About Section -->
 	  
@@ -118,7 +130,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 	  
 	  <!-- Project Section -->
 	  <div class="w3-padding-64 w3-content" id="projects">
-		  <h2 class="w3-text-light-grey">Current Project - ArtGAN</h2>
+		  <h2 class="w3-text-light-grey">Current Project</h2>
 		  <hr style="width:1000px" class="w3-opacity w3-hide-small">
 		  <hr style="width:300px" class="w3-opacity w3-hide-medium w3-hide-large">
 
@@ -143,8 +155,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <div class="w3-section">
       <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Lund, Sweden</p>
       <!-- <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +46 0762263995</p> -->
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: tfy14jma@student.lu.se</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: <a href="mailto:tfy14jma@student.lu.se?Subject=Hi%20Justin!" target="_top" class="w3-hover-text-green">tfy14jma@student.lu.se</a></p>
     </div><br>
+	  
 	  <!--
     <p>Lets get in touch. Send me a message:</p>
 
@@ -160,12 +173,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       </p>
     </form>
 	-->
+	  
   <!-- End Contact Section -->
     <!-- Footer -->
   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-	<a href="http://www.github.com/yatzima/"><i class="fab fa-github w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/yatzima/"><i class="fab fa-linkedin w3-hover-opacity"></i></a>
-    <a href="https://www.instagram.com/yatzima/"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+	<a href="http://www.github.com/yatzima/"><i class="fab fa-github w3-hover-text-green"></i></a>
+    <a href="https://www.linkedin.com/in/yatzima/"><i class="fab fa-linkedin w3-hover-text-green"></i></a>
+    <a href="https://www.instagram.com/yatzima/"><i class="fab fa-instagram w3-hover-text-green"></i></a>
     <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
   <!-- End footer -->
   </footer>
