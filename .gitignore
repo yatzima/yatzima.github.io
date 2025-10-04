@@ -1,3 +1,17 @@
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler
+.bundle/
+vendor/
+
+# Ruby version files
+.ruby-version
+.ruby-gemset
+
 ### macOS ###
 # General
 .DS_Store
